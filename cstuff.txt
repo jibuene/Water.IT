@@ -2,4 +2,6 @@ Set PICO_SDK_PATH to the SDK location in your environment, or pass it (-DPICO_SD
 
 cmake -DPICO_BOARD=pico_w ..
 
+make
+
 export PICO_SDK_PATH=/home/jibuene/dev/pico-sdk/
