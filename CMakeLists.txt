@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 pico_sdk_init()
 
 add_executable(picow_httpd_background
-        main.c
+        main.cpp
         )
 
 target_compile_definitions(picow_httpd_background PRIVATE
