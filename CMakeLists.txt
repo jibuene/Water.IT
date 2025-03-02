@@ -15,12 +15,12 @@ add_executable(picow_httpd_background
         main.cpp
         )
 
-target_compile_definitions(picow_httpd_background PRIVATE
-        WIFI_SSID=\"${WIFI_SSID}\"
-        WIFI_PASSWORD=\"${WIFI_PASSWORD}\"
-        )
+# target_compile_definitions(picow_httpd_background PRIVATE
+#         WIFI_SSID=\"${WIFI_SSID}\"
+#         WIFI_PASSWORD=\"${WIFI_PASSWORD}\"
+#         )
 
-target_link_libraries(picow_httpd_background pico_stdlib 
+target_link_libraries(picow_httpd_background hardware_adc pico_stdlib 
       pico_cyw43_arch_lwip_threadsafe_background 
                                       pico_lwip_http)
 
